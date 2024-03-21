@@ -53,6 +53,7 @@ revistas['SJR Best Quartile'] = revistas['SJR Best Quartile'].replace({
 
 ### Se encontro que en la variable SJR Best Quartile hay valores rellenos con -, por lo que se presume que no fueron categorizadas y se procede a borrar estos registros
 
+
 revistas = revistas.drop(revistas[revistas['SJR Best Quartile'] == '-'].index)
 
 ### Ahora veremos cuales son las revistas que han cambiado hasta 3 veces de nivel
